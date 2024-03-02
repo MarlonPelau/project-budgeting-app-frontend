@@ -20,6 +20,7 @@ return <div>
         <div key={id}>
             <h2>Item Name: {item_name}</h2>
             <h3>Amount: {amount}</h3>
+            <h4>Category: {category}</h4>
             <Link to={`/${id}`}>
                 <button>Details</button>
             </Link>
