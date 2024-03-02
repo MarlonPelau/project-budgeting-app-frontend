@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Transactions from "./Transactions";
+import { useParams } from "react-router-dom";
 
 const TransactionDetails = () => {
     const {id} = useParams();
