@@ -52,20 +52,21 @@ function handleCancel() {
     setToggleForm(false);
 }
 
-useEffect(() => {
-    if (id) {
-        fetch(`http://localhost:3300/api/transactions/${id}`)
-        .then((res) => res.json())
-        .then((data) => setTransaction(data.transaction));
-    }
-}, [id]);
+// useEffect(() => {
+//     if (id) {
+//         fetch(`http://localhost:3300/api/transactions/${id}`)
+//         .then((res) => res.json())
+//         .then((data) => setTransaction(data.transaction));
+//     }
+// }, [id]);
 
 return (
     <div>
         <h1>Transaction Form</h1>
         <form onSubmit={handleSubmit}>
+        <div class="mb-3">
             <label htmlFor="item_name">
-              Item Name:
+              Item Name:</label>
               <input 
                 onChange={handleChange}
                 type="text" 
@@ -73,9 +74,11 @@ return (
                 name="item_name"
                 value={transaction.item_name}
               />
-            </label>
+            
+        </div>
+        <div class="mb-3">
             <label htmlFor="amount">
-                Amount:
+                Amount:</label>
                 <input 
                 onChange={handleChange}
                 type="text" 
@@ -83,9 +86,10 @@ return (
                 name="amount"
                 value={transaction.amount}
               />
-            </label>
+        </div>
+        <div class="mb-3">
             <label htmlFor="from">
-               From:
+               From:</label>
                <input 
                 onChange={handleChange}
                 type="text" 
@@ -93,9 +97,10 @@ return (
                 name="from"
                 value={transaction.from}
               />
-              </label>
-              <label htmlFor="category">
-              Category:
+        </div>
+        <div class="mb-3">
+            <label htmlFor="category">
+              Category:</label>
               <input 
                 onChange={handleChange}
                 type="text" 
@@ -103,10 +108,10 @@ return (
                 name="category"
                 value={transaction.category}
              />
-            </label>
-            <button>Submit</button>
+        </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" onClick={handleCancel}>Cancel</button>
         </form>
-        <button onClick={handleCancel}>Cancel</button>
     </div>
   );
 };

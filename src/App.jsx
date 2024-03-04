@@ -6,6 +6,8 @@ import Transactions from "./Transactions";
 import TransactionDetails from "./TransactionDetails";
 import TransactionForm from "./TransactionForm";
 
+import Navigation from './Navigation';
+
 const App = () => {
   const [transactions, setTransactions] = useState([]);
   // this state purpose to toggle the TransactionDetails component and send the id
@@ -20,12 +22,12 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Budgtr</h1>
+    <div className='container'>
+      <Navigation/>
       
-      <Link to="/new">
+      {/* <Link to="/new">
         <button>Create Transaction</button>
-      </Link>
+      </Link> */}
 
       <Routes>
         {/* all the transactions/components next up */}
@@ -42,8 +44,12 @@ const App = () => {
           }
         />
         <Route
-        path="/:id"
-        element={<TransactionDetails toggleDetails={toggleDetails} />}
+          path="/:id"
+          element={
+            <TransactionDetails 
+              toggleDetails={toggleDetails} 
+            />
+          }
         />
         <Route
         path="/edit/:id"
@@ -57,15 +63,15 @@ const App = () => {
         }
         />
         <Route
-        path="/new"
-        element={
-          <TransactionForm
-          edit={edit}
-          setEdit={setEdit}
-          setTransactions={setTransactions}
-          setToggleForm={setToggleForm}
-          />
-        }
+          path="/new"
+          element={
+            <TransactionForm
+              // edit={edit}
+              // setEdit={setEdit}
+              // setTransactions={setTransactions}
+              // setToggleForm={setToggleForm}
+            />
+          }
         />
       </Routes>
     </div>
