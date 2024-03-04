@@ -1,13 +1,14 @@
 # Budgeting App Frontend
 *Budgtr!*
 
-<img src="h" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1709581074/budgtr_uljc8n.webp" width="400" height="400">
 
-Moving from a group project to a solo one, isn't easy. That's why we have to budget. Enter the `*Budgtr App*`! A solo project to build a 'simply' app to track and in some cases, chart different types of transactions. Below I used this list of **Project Tools & Skills**:
+Moving from a group project to a solo one, isn't easy. That's why we have to budget so carefully, we scale back on the word itself! Haa!  Enter the `*Budgtr App*`! A solo project to build a 'simple' app to track and in some cases, chart different types of transactions. Below, you'll soon see that I used this list of **Project Tools & Skills**:
 - React Hooks
 - React Router 6.2.1
 - BrowserRouter
 - Forms
+- Components
 - Controlled Inputs
 - Event Handlers
 - Fetch API
@@ -20,7 +21,6 @@ Moving from a group project to a solo one, isn't easy. That's why we have to bud
 - Netlify.com frontend deployment
 - Self learning
 - ChatGPT
-- AI
 
 # TABLE OF CONTENTS  
 - Features
@@ -30,81 +30,72 @@ Moving from a group project to a solo one, isn't easy. That's why we have to bud
 - Contributing
 
 # Features
--Our `landing page` is a winner. It's simple, but the complex, carousel of visuals almost make it edible. One bite, and you're hooked into our world of recipes. It also has an `About Us` link, connecting the user to us -- the team that built this app.
+-There's simplicity to when you first enter my `landing page`.
 
--Functionality immediately by clicking the imagery, navigating to recipes.
+-Functionality? Click around and navigate to meet your favorite endpoints and keypoints, hurry up we're awaiting your return.
 
--A unique `search bar` that defines the phrase 'dietary bliss by omission'.
-
--Besides the incredible recipes, the `reviews` section allows the user to best steer the next avid recipe-r towards recipes aligned with their cravings.
+-Back `home` already? I told you it's a simple app, to spend little time so that they can get back to their busy schedules.
 
 ## Installation
 To run the app locally, follow these steps:
 
 1st..
 
-Clone the repository: git clone 
+Clone the repository: git clone https://github.com/MarlonPelau/project-budgeting-app-frontend.git
 
 2nd...
 
-Navigate to the project directory:
+Navigate to the project directory for *frontend* (or *backend*):
 
-cd `project...`
+cd ``
 
 3rd...
 
-Install dependencies: npm i
+Install dependencies: npm i express dotenv cors .env react-router-dom
 
 Start the development server: npm start
 
 ### Components
-`About` Component
+`Navigation` Component
 The `About component` simply links the go-to information for the **About Us** page that informs any user on the make-up and contact info about our group, Heaven Seven -- 4 creators of the **recipEATS!** site/app.
 
-`Landing` Component
+`TransactionDetails` Component
 For the `Landing component`, this is your first stop on our page as a user. From this Landing page, there's a 'carousel' medley of images, each one if clicked on, takes you to the more detailed list of Recipes page, displaying our various recipes and dishes.
 
-`Carousel` Component
+`TransactionForm` Component
 The `Carousel component` is to grab the user's attention with the imagery of 3 different recipe dishes, making the app more appealing and engaging.
 
-`Recipe` Component
+`TransactionRow` Component
 The `Recipe component` is to display the details for individual recipes, for the user to add feedback and reviews, including 1-5 star ratings, country of origin, whether it's vegan, vegetarian or gluten-free, and is a huge part of the app, which for us, must have an inclusion of community.
 
-`Recipes` Component
-The `Recipes component` -- not to mixed up with the above 'Recipe' component, displays every recipe available, broken down by dish image, dish name and of course the recipe's list of ingredients.
-
-`Header` Component
-The `Header component` is up top, as its name suggests, on the landing page. It's the simplest component, carrying our *recipEATS!* title/link and our 'About Us' link.
-
-`ReviewsForm` Component
-The `ReviewsForm` holds a separate file for each fetch. For the two functions, one fetch grabs all the recipe data, and another fetch grabs one recipe based on the ID.
-
-`RecipeDetails` Component
-Our `RecipeDetails component` works hand-in-hand with the `Recipes` component to give the user a taste of some very entertaining details about the recipe. From their 'country of origin' to 'Spice Level', and from 'Meal Prep' time to  giving the user the option to even 'Add review'. 
+`Transactions` Component
+The `Recipes component` -- not to mixed up with the above 'Recipe' component, displays every recipe available, broken down by dish  
 
 ### Routing
-We used (5) Routes for the following files below:
+We used (6) Routes for the following files below:
 
 -Index.html
 
--About.jsx
+-Navigation.jsx
 
--Recipes.jsx
+-TransactionDetails.jsx
 
--Recipe.jsx
+-TransactionForm.jsx
 
--RecipeDetails.jsx
+-TransactionRow.jsx
+
+-Transactions.jsx
 
 #### Bonus Items
-Stretch Goals:
+Stretch Goal(s):
 
--Reviews or comments or ratings are options for any user to do  for any recipe resource that persists in JSON server, making our app more interactive.
+-Displaying `bank account total` in Navigation.jsx component for the **Create Transaction** (static) button visible on all views. 
 
--Most, if not all our images, are stored and uploaded in a Cloudinary account, owned by one of our squad members: Marlon. 
+-A resuse of a stretch goal from my last project: using the `cloudinary` site for hosting images right in this README.md file.
 
 #### Contributing
 Contributions: 
-You're welcome to contribute to my 'Budgtr App Solo Project', simply follow the steps below:
+You're welcome to contribute to my 'Budgtr App', simply follow the steps below:
 
 **Fork the repository**
 Create a new branch: git checkout -b 'feature/new-feature'
@@ -117,29 +108,21 @@ Submit a pull request.
 
 # 5 USER STORIES
 
--The app should be free to download and available on both Apple App, Google Play stores.
+-As a first-time user, navigation and smooth functionality for immediate calculations in budgetary needs.
 
--The app should include filters to cater for user customization for recipes 'without' certain ingredients.
+-As a repeat user, consistency is key, what works and has worked, please don't break it.
 
--As a first-time user, navigation and smooth functionality to minimize frustration is key.
+-As an avid user, there should be prompts to encourage positive reviews about Budgtr.
 
--As a user suffering from allergies, the app must make sense to show me my options.
+-As a user, the hardwork falls on the app, not the user - the app must do the work!
 
--As a repeat user, any new discovery should lead to continued revisits.
-
--As an avid user, there should be opportunities through the app to build a community.
-
--As a user, trust is extremely important so the products must deliver and mean as it says.
-
--As a user, I want to discover easy-to-follow recipes.
-
--As a user, I want to be able to also search for recipes based on specific ingredients.
-
--As a user, there must be a diverse range of recipes. Variety is the spice of life!
+-As a user, accuracy is of the utmost importance to avoid inconveniences.
 
 ## A User Persona:
 
-Here's **Connor**, he's a dessert fiend, but absolutely can't have any recipe that includes sugar, which for sweetness, could be replaced with the following: agave, honey, or coconut shavings/flakes. He's on the right site for his sweet-tooth cravings, with our recipEATS app!
+Here's **Connor**, he's always on the run, and like a calculater does for us, he's not in the mood to work the math out himself. In other words, his brain isn't brain-ing for this detail, he has no grip on what transactions come, go and how these amounts calculate. He's doing a millions different tasks daily, he only has that luxury of time on the weekend, when he wants to relax. So during the week, the `Budgtr` app does the work for him: tracks transactions, does tally totals and for his hands on use of the app, he can create new types of transactions as it 'requires', read through details, make adjustments or updates + delate if needed!
+
+With `Budgtr`, my tagline is: *"the math is always mathing!"*
 
 **Set Up Instructions**
 # Deploying Frontend on Netlify:
@@ -191,7 +174,7 @@ Just a few images showing the Budgetr App! (visual snippets)
 
 # ABOUT ('fun fact') ME:
 
-"In a different space, my 'name' IS one of the dishes in our recipe app!"
+"My roots are West Indian, I grew up on an island where the population is majority Black (or East Indian), yet on my street we were the only Black (of African descent) family on the block. Can you guess what such a diverse island I grew up on?"
 
 
 ## DEPLOYMENT & REPO LINKS

@@ -22,6 +22,7 @@ return <table>
                 key={id}
                 transactions={transactions}
                 setTransactions={setTransactions}
+                id={id}
             />
         // <div key={id}>
         //     <h2>Item Name: {item_name}</h2>

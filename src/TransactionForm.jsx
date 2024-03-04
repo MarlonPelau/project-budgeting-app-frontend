@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const TransactionForm = ({setTransactions, setToggleForm}) => {
+    const {id} = useParams()
+    const navigate = useNavigate()
     const [transaction, setTransaction] = useState({
         item_name: "",
         amount: "",
@@ -28,7 +30,7 @@ function handleSubmit(e) {
         fetch(`http://localhost:3300/api/transactions/${id}`, options)
         .then((res) => res.json())
         .then((data) => setTransactions(data.transactions))
-        .then(() => Navigate("./"));
+        .then(() => navigate("/"));
     } else {
         const options = {
             method: "POST",
@@ -41,30 +43,31 @@ function handleSubmit(e) {
             if (data.message) alert("All Inputs Must Be Filled")
             else {
                 setTransactions(data.transactions);
-                Navigate("./");
+                navigate("/");
         }
         })
         .catch((err) => console.log(err));
     }
 }
 function handleCancel() {
-    setImmediate({show: false, id: null});
-    setToggleForm(false);
+    navigate("/");
+    // setImmediate({show: false, id: null});
+    // setToggleForm(false);
 }
 
-// useEffect(() => {
-//     if (id) {
-//         fetch(`http://localhost:3300/api/transactions/${id}`)
-//         .then((res) => res.json())
-//         .then((data) => setTransaction(data.transaction));
-//     }
-// }, [id]);
+useEffect(() => {
+    if (id) {
+        fetch(`http://localhost:3300/api/transactions/${id}`)
+        .then((res) => res.json())
+        .then((data) => setTransaction(data.transaction));
+    }
+}, [id]);
 
 return (
     <div>
         <h1>Transaction Form</h1>
         <form onSubmit={handleSubmit}>
-        <div class="mb-3">
+        <div className="mb-3">
             <label htmlFor="item_name">
               Item Name:</label>
               <input 
@@ -76,18 +79,29 @@ return (
               />
             
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
             <label htmlFor="amount">
                 Amount:</label>
                 <input 
                 onChange={handleChange}
-                type="text" 
+                type="number"
                 id="amount"
                 name="amount"
                 value={transaction.amount}
               />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
+            <label htmlFor="date">
+               Date:</label>
+               <input 
+                onChange={handleChange}
+                type="text" 
+                id="date"
+                name="date"
+                value={transaction.date}
+              />
+        </div>
+        <div className="mb-3">
             <label htmlFor="from">
                From:</label>
                <input 
@@ -98,7 +112,7 @@ return (
                 value={transaction.from}
               />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
             <label htmlFor="category">
               Category:</label>
               <input 
@@ -109,8 +123,8 @@ return (
                 value={transaction.category}
              />
         </div>
-            <button type="button" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-primary" onClick={handleCancel}>Cancel</button>
+            <button type="submit" className="btn btn-primary">Submit</button>
+            <button className="btn btn-primary" onClick={handleCancel}>Cancel</button>
         </form>
     </div>
   );

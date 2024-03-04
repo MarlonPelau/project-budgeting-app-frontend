@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div className='container'>
-      <Navigation/>
+      <Navigation transactions={transactions} />
       
       {/* <Link to="/new">
         <button>Create Transaction</button>
@@ -68,7 +68,7 @@ const App = () => {
             <TransactionForm
               // edit={edit}
               // setEdit={setEdit}
-              // setTransactions={setTransactions}
+              setTransactions={setTransactions}
               // setToggleForm={setToggleForm}
             />
           }
