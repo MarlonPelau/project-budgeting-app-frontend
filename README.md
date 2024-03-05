@@ -175,8 +175,9 @@ Just a few images showing the Budgetr App! (visual snippets)
 
 ## DEPLOYMENT & REPO LINKS
 
-**Frontend deployment - netlify.com link**:
+**Frontend deployment - netlify.com link**: https://mybudgtr.netlify.app
 *Frontend* - https://github.com/MarlonPelau/project-budgeting-app-frontend
-**Backend deployment - render.com link**:
+
+**Backend deployment - render.com link**: https://budgtr-app-backend.onrender.com
 *Backend* - https://github.com/MarlonPelau/budgtr-app-backend
 **My Repo - Marlon Regis**: <button><a href="https://github.com/MarlonPelau">HERE!</a></button>
