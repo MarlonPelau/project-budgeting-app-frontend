@@ -7,6 +7,7 @@ Moving from a group project to a solo one, isn't easy. That's why we have to bud
 - React Hooks
 - React Router 6.2.1
 - BrowserRouter
+- Cors
 - Forms
 - Components
 - Controlled Inputs
@@ -32,9 +33,9 @@ Moving from a group project to a solo one, isn't easy. That's why we have to bud
 # Features
 -There's simplicity to when you first enter my `home page`.
 
--Functionality? Click around and navigate to meet your necessary transaction endpoints, keys and keypoints.
+-Functionality? Click around and navigate to meet your necessary transaction means.
 
--Back `home` already? I told you it's a simple app, you'll spend little time on it so you can get back to their busy schedules.
+-Back `home` already? I told you it's a simple app, you'll spend little time on it so you can get back to your busy schedule.
 
 ## Installation
 To run the app locally, follow these steps:
@@ -57,19 +58,14 @@ Start the development server: npm start
 
 ### Components
 `Navigation` Component
-The `About component` simply links the go-to information for the **About Us** page that informs any user on the make-up and contact info about our group, Heaven Seven -- 4 creators of the **recipEATS!** site/app.
 
 `TransactionDetails` Component
-For the `Landing component`, this is your first stop on our page as a user. From this Landing page, there's a 'carousel' medley of images, each one if clicked on, takes you to the more detailed list of Recipes page, displaying our various recipes and dishes.
 
 `TransactionForm` Component
-The `Carousel component` is to grab the user's attention with the imagery of 3 different recipe dishes, making the app more appealing and engaging.
 
 `TransactionRow` Component
-The `Recipe component` is to display the details for individual recipes, for the user to add feedback and reviews, including 1-5 star ratings, country of origin, whether it's vegan, vegetarian or gluten-free, and is a huge part of the app, which for us, must have an inclusion of community.
 
 `Transactions` Component
-The `Recipes component` -- not to mixed up with the above 'Recipe' component, displays every recipe available, broken down by dish  
 
 ### Routing
 We used (6) Routes for the following files below:
