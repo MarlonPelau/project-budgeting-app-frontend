@@ -30,28 +30,28 @@ Moving from a group project to a solo one, isn't easy. That's why we have to bud
 - Contributing
 
 # Features
--There's simplicity to when you first enter my `landing page`.
+-There's simplicity to when you first enter my `home page`.
 
--Functionality? Click around and navigate to meet your favorite endpoints and keypoints, hurry up we're awaiting your return.
+-Functionality? Click around and navigate to meet your necessary transaction endpoints, keys and keypoints.
 
--Back `home` already? I told you it's a simple app, to spend little time so that they can get back to their busy schedules.
+-Back `home` already? I told you it's a simple app, you'll spend little time on it so you can get back to their busy schedules.
 
 ## Installation
 To run the app locally, follow these steps:
 
 1st..
 
-Clone the repository: git clone https://github.com/MarlonPelau/project-budgeting-app-frontend.git
+Clone the repository: git clone https://github.com/MarlonPelau/project-budgeting-app-frontend.git 
 
 2nd...
 
 Navigate to the project directory for *frontend* (or *backend*):
 
-cd ``
+cd `project-budgeting-app-frontend`
 
 3rd...
 
-Install dependencies: npm i express dotenv cors .env react-router-dom
+Install dependencies: npm i `express` `dotenv` `cors` `.env` `react-router-dom`
 
 Start the development server: npm start
 
@@ -122,7 +122,7 @@ Submit a pull request.
 
 Here's **Connor**, he's always on the run, and like a calculater does for us, he's not in the mood to work the math out himself. In other words, his brain isn't brain-ing for this detail, he has no grip on what transactions come, go and how these amounts calculate. He's doing a millions different tasks daily, he only has that luxury of time on the weekend, when he wants to relax. So during the week, the `Budgtr` app does the work for him: tracks transactions, does tally totals and for his hands on use of the app, he can create new types of transactions as it 'requires', read through details, make adjustments or updates + delate if needed!
 
-With `Budgtr`, my tagline is: *"the math is always mathing!"*
+With `Budgtr`, my tagline is: *"the MATH is always MATHing!"*
 
 **Set Up Instructions**
 # Deploying Frontend on Netlify:
@@ -168,13 +168,13 @@ Render will deploy your backend and provide a URL.
 #### Visual Examples
 Just a few images showing the Budgetr App! (visual snippets)
 
-<img src="h" alt="Landing page 1" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1709595609/Screenshot_2024-03-04_at_6.38.50_PM_dxzdgx.png" alt="Home page" width="400" height="400">
 
-<img src="h" alt="Landing page 1" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1709595794/Screenshot_2024-03-04_at_6.42.19_PM_kbhuy3.png" alt="Transaction Form" width="400" height="400">
 
 # ABOUT ('fun fact') ME:
 
-"My roots are West Indian, I grew up on an island where the population is majority Black (or East Indian), yet on my street we were the only Black (of African descent) family on the block. Can you guess what such a diverse island I grew up on?"
+"My sub-roots are West Indian, and I grew up on an island where the population is about 43% Black/African + 43% East Indian, 1% Syrian, 5% Mixed, 2% Chinese, 5% White and about 1% Venezuelan immigrants. Can you guess what such a diverse island this is?"
 
 
 ## DEPLOYMENT & REPO LINKS

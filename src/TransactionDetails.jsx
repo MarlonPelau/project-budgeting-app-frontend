@@ -45,9 +45,27 @@ const TransactionDetails = ({ transactions }) => {
         <p>From: {transactionDetail.from}</p>
         <p>Category: {transactionDetail.category}</p>
 
-        <button onClick={() => navigate(`/edit/${id}`)}>EDIT</button>
+        <button onClick={() => navigate(`/edit/${id}`)}
+        style={{
+            backgroundColor: "blue",
+            color: "white",
+            borderRadius: "5px",
+            marginRight: "10px",
+            padding: "8px 16px",
+            border: "none"
+        }}
+        >EDIT</button>
 
-        <button onClick={() => handleDelete(id)}>DELETE</button>
+        <button onClick={() => handleDelete(id)}
+        style={{
+            backgroundColor: "red",
+            color: "black",
+            borderRadius: "5px",
+            marginRight: "10px",
+            padding: "8px 16px",
+            border: "none"
+        }}
+        >DELETE</button>
 
             {/* <h1>Transaction Details</h1> */}
           

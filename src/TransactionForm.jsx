@@ -123,8 +123,10 @@ return (
                 value={transaction.category}
              />
         </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
-            <button className="btn btn-primary" onClick={handleCancel}>Cancel</button>
+            <button type="submit" className="btn btn-primary m-2">Submit</button>
+            
+            <button className="btn btn-dark" onClick={handleCancel}>Cancel</button>
+        
         </form>
     </div>
   );
